@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Forest Wanderer's blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <img src="../../static/media/header_image2.jpg" width="100%" alt="foggy forest" border="0">
+    </head>
+    <body>
+       
+            <div class="page-header">
+                <!–– <img src=""../../static/media/header_image.jpg" alt="header image" width="1000">
+                <div><h1>Forest Wanderer's Blog</h1></div>
+                <!–– <img src="../../static/media/header_image.jpg" width="1000" alt="header image"> <!–– this might be wrong >
+           </div> 
+
+
+            <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
+                </div>
+            </div>
+
+
+
+    </body>
+</html>
+
