@@ -1,12 +1,15 @@
 .page-header {
-    background-color: #ffffff;
+    background-color: none;
+    background-image: url(../media/header_image2.jpg);
+    background-size: 100%;
     margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    padding: 14.5% 3% 1.5% 3%;
 }
+    
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #000000;
-    font-size: 36pt;
+    color: #ffffff;
+    font-size: 42pt;
     text-decoration: none;
 }
 
