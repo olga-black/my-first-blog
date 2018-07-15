@@ -6,13 +6,16 @@
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!- <img src="../../static/media/header_image2.jpg" width="100%" alt="foggy forest" border="0">
     </head>
     <body>
        
          <div class="page-header">
-              <h1>Forest Wanderer's Blog</h1>
+              {% if user.is_authenticated %}
+                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+              {% endif %}
+              <h1> <a href="/">Forest Wanderer</a> </h1>
 
          </div> 
 
