@@ -5,11 +5,11 @@
     margin-top: 0;
     padding: 14.5% 3% 1.5% 3%;
 }
-    
+
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 42pt;
+    font-size: 28pt;
     text-decoration: none;
 }
 
@@ -20,6 +20,10 @@
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display SC', serif;
+}
+
+h1 {
+    color:  #196769;
 }
 
 .date {
@@ -47,4 +51,8 @@ h1, h2, h3, h4 {
 
 .post h1 a, .post h1 a:visited {
     color: #196769;
+}
+
+.comment {
+    margin: 20px 0px 20px 20px;
 }
