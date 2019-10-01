@@ -6,17 +6,67 @@
     padding: 14.5% 3% 1.5% 3%;
 }
 
+@media screen and (max-width: 600px) {
+   .page-header {
+       padding: 3% 1.5% 1.5%;
+       background-size: 160%;
+   }
+}
+
+@media screen and (min-width: 601px) {
+   .page-header {
+       padding: 8% 1.5% 1.5%;
+       background-size: 110%;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .page-header {
+       padding: 3% 1.5% 1.5%;
+       background-size: 200%;
+   }
+}
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 28pt;
+    font-size: 42pt;
     text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+       font-size: 28pt;
+   }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+       font-size: 30pt;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+       font-size: 22pt;
+   }
+}
 
 .content {
     margin-left: 40px;
 }
+
+@media screen and (max-width: 600px) {
+   .content {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+   .content {
+        margin-left: 15px;
+    }
+}
+
 
 h1, h2, h3, h4 {
     font-family: 'Playfair Display SC', serif;
@@ -51,6 +101,18 @@ h1 {
 
 .post h1 a, .post h1 a:visited {
     color: #196769;
+}
+
+@media screen and (max-width: 600px) {
+   .post h1 a, .post h1 a:visited {
+       font-size: 24pt;
+   }
+}
+
+@media screen and (max-width: 320px) {
+   .post h1 a, .post h1 a:visited {
+       font-size: 18pt;
+   }
 }
 
 .comment {
