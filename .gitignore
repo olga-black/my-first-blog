@@ -3,7 +3,7 @@
 __pycache__
 myenv
 db.sqlite3
-/static/media
+/static/media/*
 .DS_Store
 secrets.py
-/blog/migrations
+/blog/migrations/*

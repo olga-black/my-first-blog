@@ -26,19 +26,16 @@ def post_detail(request, pk):
 
 @login_required
 def post_new(request):
-    if request.method == "POST":
-        form = PostForm(request.POST, request.FILES)
-        if form.is_valid():
-            post = form.save(commit=False)
-            if request.FILES:
-                post.image = request.FILES['image'].name
-            post.author = request.user
-            post.published_date = timezone.now()
-            post.save()
-            return redirect('post_detail', pk=post.pk)
+    form = PostForm(request.POST, request.FILES)
+    if form.is_valid():
+        post = form.save(commit=False)
+        post.author = request.user
+        post.published_date = timezone.now()
+        form.save()
+        return redirect('post_detail', pk=post.pk)
     else:
         form = PostForm()
-        return render(request, 'blog/post_edit.html', {'form': form})
+    return render(request, 'blog/post_edit.html', {'form': form})
 
 @login_required
 def post_edit(request, pk):
