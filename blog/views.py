@@ -5,12 +5,19 @@ from blog.models import Post, Comment
 from django.utils import timezone
 from .forms import PostForm, CommentForm
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
 
 
 # Create your views here.
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('-published_date')
+    query = request.GET.get('q')
+    if query:
+        posts = posts.filter(
+            Q(title__icontains=query) |
+            Q(text__icontains=query)
+            )
     return render(request, 'blog/post_list.html', {'posts': posts})
 
 def post_detail(request, pk):

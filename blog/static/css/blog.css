@@ -118,3 +118,8 @@ h1 {
 .comment {
     margin: 20px 0px 20px 20px;
 }
+
+.empty {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 35pt;
+}
