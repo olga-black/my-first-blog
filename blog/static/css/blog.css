@@ -33,20 +33,25 @@
     text-decoration: none;
 }
 
+.empty {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 35pt;
+}
+
 @media screen and (max-width: 600px) {
-   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
        font-size: 28pt;
    }
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
        font-size: 30pt;
    }
 }
 
 @media screen and (max-width: 320px) {
-   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active{
+   .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
        font-size: 22pt;
    }
 }
@@ -119,7 +124,16 @@ h1 {
     margin: 20px 0px 20px 20px;
 }
 
-.empty {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 35pt;
+
+
+@media screen and (max-width: 900px) {
+   .empty {
+       font-size: 24pt;
+   }
+}
+
+@media screen and (max-width: 600px) {
+   .empty {
+       font-size: 20pt;
+   }
 }
